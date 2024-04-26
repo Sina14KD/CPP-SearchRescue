@@ -4,7 +4,10 @@ and rescue operations".
 
 How to run the file:
 
-1- Run the AlgorithmNOPP.py
+1- install packages in requirements.txt
 
-2- Run Test.py
+2- Run the AlgorithmNOPP.py
+
+3- Run Test.py
+
 
