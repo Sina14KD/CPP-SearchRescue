@@ -3,4 +3,6 @@ This file includes the Python code for the NOPP algorithm proposed in the paper 
 and rescue operations".
 
 How to run the file:
+1- Run the AlgorithmNOPP.py
+2- Run Test.py
 
