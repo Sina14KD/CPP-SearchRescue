@@ -6,7 +6,7 @@ How to run the file:
 
 1- install packages in requirements.txt
 
-2- Run the AlgorithmNOPP.py
+2- Run the nopp_algorithm.py
 
 3- Run Test.py
 
