@@ -357,3 +357,14 @@ def plotPath(ans,n,m):
     #plt.grid()
     #plt.savefig("myimage.eps", dpi=1200)
     plt.show()
+
+# ******************* Test **************************************************
+n=10
+m=10
+q=3
+
+sol=generateAllDronesPath(n,m,q)
+print('Solution : ',sol)
+
+# plot
+plotPath(sol,n,m)
