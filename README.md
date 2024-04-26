@@ -1,2 +1,3 @@
 # Muitple UAVs Coverage Path Planning for Search and Rescue
-This 
+Description:
+This file includes the Python code for 
