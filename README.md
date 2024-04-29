@@ -8,5 +8,4 @@ How to run the file:
 
 2- Run the nopp_algorithm.py
 
-Example:
 
