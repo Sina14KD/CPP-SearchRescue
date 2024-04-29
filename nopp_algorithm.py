@@ -298,7 +298,7 @@ def plotPath(ans,n,m):
     # plot
     fig = plt.figure(dpi=300)
     ax = fig.add_subplot(1, 1, 1)
-    fig.set_size_inches(5, 5*m/n)   # Set the size of the figure
+    fig.set_size_inches(10, 10*m/n)   # Set the size of the figure
     ax.set_title('drone path - q : {}'.format(len(ans)))
     for i in range(len(ans)):
         ax.scatter(np.array(x[i]),np.array(y[i]),color='#F0F0F0',s=10*300/(n*m))
