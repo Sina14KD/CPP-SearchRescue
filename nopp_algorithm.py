@@ -351,6 +351,12 @@ def plotPath(ans,n,m):
     plt.show()
 
 # ******************* Test **************************************************
+'''
+n: Number of cells along the length (X-axis) of the search area
+m: Number of cells along the width (Y-axis) of the search area
+q: Number of UAVs (Drones)
+'''
+
 n=10
 m=10
 q=3
