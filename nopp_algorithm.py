@@ -283,11 +283,11 @@ w: Wind speed (m/s)
 d: Size of the cell's edge (m)
 '''
 def calculate_LB(n,m,q,v,w,d):
-    T_s=d/(v+w)
-    T_p=d/math.sqrt(v**2-w**2)
+    T_s=round(d/(v+w),2)
+    T_p=round(d/math.sqrt(v**2-w**2),2)
     LB=(n-1)*T_s+(math.ceil(m*n/q)-n)*T_p
     PT=math.ceil(m*n/q)-n
-    return LB
+    return round(LB,2)
 
 '''
 Calculate the operation time (coverage time required by the NOPP solution)
@@ -302,7 +302,7 @@ def totalObjectValue(ans,v,w,d):
     for i in range(len(ans)):
         o= objectiveFunctionValueForDrone(ans[i],v,w,d)
         allObjectValues.append(o)
-    return max(allObjectValues)
+    return round(max(allObjectValues),2)
 
 '''
 Calculate the mission time for each UAV
@@ -313,8 +313,8 @@ w: Wind speed (m/s)
 d: Size of the cell's edge (m)
 '''
 def objectiveFunctionValueForDrone(ans,v,w,d):
-    T_s=d/(v+w)
-    T_p=d/math.sqrt(v**2-w**2)
+    T_s=round(d/(v+w),2)
+    T_p=round(d/math.sqrt(v**2-w**2),2)
     sMoves=0
     pMoves=0
     for i in range(len(ans)):
@@ -416,16 +416,20 @@ w: Wind speed (m/s)
 d: Size of the cell's edge (m)
 '''
 
-n,m,q=10,10,3
+n,m,q=13,24,7
 v,w,d=20,5,100
 
 ans=generateAllDronesPath(n,m,q)
+lower_bound=calculate_LB(n,m,q,v,w,d)
+operation_time=totalObjectValue(ans,v,w,d)
 
-print('==========Results==========')
-print('LB is : ', calculate_LB(n,m,q,v,w,d))
-print('---------------------------')
-print('Operation time is : ',totalObjectValue(ans,v,w,d))
-print('---------------------------')
+print('====================Results====================')
+print('LB is : ', lower_bound)
+print('-----------------------------------------------')
+print('Operation time is : ',operation_time)
+print('-----------------------------------------------')
+print('Absolute gap (T_p={}) is : {}'.format(round(d/math.sqrt(v**2-w**2),2),round(operation_time-lower_bound,2)))
+print('-----------------------------------------------')
 print('Solution is : ',ans)
 
 # plot
