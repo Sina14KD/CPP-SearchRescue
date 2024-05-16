@@ -416,7 +416,7 @@ w: Wind speed (m/s)
 d: Size of the cell's edge (m)
 '''
 
-n,m,q=13,24,7
+n,m,q=15,15,4
 v,w,d=20,5,100
 
 ans=generateAllDronesPath(n,m,q)
