@@ -1,6 +1,2 @@
-matplotlib.cm
-time
-copy
-math
-matplotlib.pyplot
+matplotlib
 numpy
