@@ -4,7 +4,7 @@ and rescue operations" (Demo is available at http://sina14.pythonanywhere.com/).
 
 How to run the file:
 
-1- install packages in requirements.txt
+1- install Matplotlib and Numpy
 
 2- Run the nopp_algorithm.py
 
