@@ -1,6 +1,6 @@
 # Muitple UAVs Coverage Path Planning for Search and Rescue
-This file includes the Python code for the NOPP algorithm proposed in the paper "An exact coverage path planning algorithm for UAV-based search
-and rescue operations" (Demo is available at http://sina14.pythonanywhere.com/). Also, by downloading the file "Demo_Video.mp4", you can see the generated solution of the NOPP algorithm for 20 UAVs in a 73x59 search area as a video. The paper is available at https://arxiv.org/abs/2405.11399.
+This file includes the Python code for the NOPP algorithm proposed in the paper "An algorithm with exact bounds for coverage path planning in
+UAV-based search and rescue under windy conditions". Also, by downloading the file "Demo_Video.mp4", you can see the generated solution of the NOPP algorithm for 20 UAVs in a 73x59 search area as a video. The paper is available at https://arxiv.org/abs/2405.11399.
 
 How to run the file:
 
